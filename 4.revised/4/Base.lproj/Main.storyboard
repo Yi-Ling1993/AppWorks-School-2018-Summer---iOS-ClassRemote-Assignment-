@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-Yl-Y8D">
+                                <rect key="frame" x="11" y="186" width="353" height="96"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shiaogang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P5-IN-zPP">
+                                <rect key="frame" x="11" y="186" width="353" height="96"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="80"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-Md-pZg">
+                                <rect key="frame" x="178.5" y="115" width="18.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZv-ZE-jwx">
+                                <rect key="frame" x="154.5" y="445.5" width="66.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.64260193171027624" blue="0.23825358994388979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5P5-IN-zPP" firstAttribute="top" secondItem="KdG-Md-pZg" secondAttribute="bottom" constant="35" id="0Vq-42-lVd"/>
+                            <constraint firstItem="5P5-IN-zPP" firstAttribute="top" secondItem="V7B-Yl-Y8D" secondAttribute="top" id="1zo-n5-0gn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nZv-ZE-jwx" secondAttribute="bottom" constant="200" id="32G-Xt-8Og"/>
+                            <constraint firstItem="5P5-IN-zPP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="186" id="7gC-9U-fDg"/>
+                            <constraint firstItem="5P5-IN-zPP" firstAttribute="bottom" secondItem="V7B-Yl-Y8D" secondAttribute="bottom" id="QZv-qx-Sta"/>
+                            <constraint firstItem="5P5-IN-zPP" firstAttribute="trailing" secondItem="V7B-Yl-Y8D" secondAttribute="trailing" id="Sey-p9-RFc"/>
+                            <constraint firstItem="KdG-Md-pZg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YEx-kI-36H"/>
+                            <constraint firstItem="5P5-IN-zPP" firstAttribute="leading" secondItem="V7B-Yl-Y8D" secondAttribute="leading" id="e1j-0T-Xco"/>
+                            <constraint firstItem="5P5-IN-zPP" firstAttribute="centerX" secondItem="KdG-Md-pZg" secondAttribute="centerX" id="poz-Gq-Ila"/>
+                            <constraint firstItem="nZv-ZE-jwx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t9o-bh-KO5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AddressLabel" destination="nZv-ZE-jwx" id="0rB-UB-7NW"/>
+                        <outlet property="StationIDLabel" destination="KdG-Md-pZg" id="xEg-bU-dYQ"/>
+                        <outlet property="StationNameLabel" destination="5P5-IN-zPP" id="kdw-nU-qyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
